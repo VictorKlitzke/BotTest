@@ -2,63 +2,20 @@
 # By VictorKlitzke(Sem copia safado)
 
 from csv import writer
-from gridfs import ClientSession
 from pyautogui import *
 from time import sleep as wait
 
 def Novo():
-  wait(5)
-  click(1616, 230)
-  wait(.7)
-  write('Cliente consumidor')
-  wait(.7)
-  press('enter')
-  write('Vendedor')
-  wait(.7)
-  press('enter')
-  write('Victor')
-  wait(.7)
-  press('enter')
-  write('A Vista')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  write('1122')
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(.7)
-  press('enter')
-  wait(5)
-  position()
 
+  print('Inicio')
+  x, y = locateCenterOnScreen('./imgs/faturamento.png')
+  click(x, y)
+  wait(3)
+  print('Prevenda')
+  x, y = locateCenterOnScreen('./imgs/prevenda.png')
+  click(x, y)
+  wait(3)
+  print('New')
+  x, y = locateCenterOnScreen('./imgs/new.png')
+  click(x, y)
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
