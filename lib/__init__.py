@@ -61,18 +61,16 @@ def Novo():
   press('enter')
   wait(.7)
   print('Salvar')
-  x, y = locateAllOnScreen('./imgs/Salvar.png')
+  x, y = locateCenterOnScreen('./imgs/Salvar.png')
   click(1553, 155)
   press('clique')
   wait(3)
   press('enter')
-
-
-
-
-
-
-
-
+  print('liberar_Venda')
+  x, y = locateCenterOnScreen('./imgs/Liberar.png')
+  click(1541, 935)
+  press('Clique')
+  wait(.7)
+  press('enter')
 
   
