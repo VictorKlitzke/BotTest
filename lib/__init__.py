@@ -4,7 +4,6 @@
 from csv import writer
 from pyautogui import *
 from selenium import *
-from behave import *
 from time import sleep as wait
 
 def Novo():
@@ -61,12 +60,12 @@ def Novo():
   wait(.7)
   press('enter')
   wait(.7)
-  print('editar')
-  x, y = locateAllOnScreen('./imgs/editar.png')
-  position()
-  click(x, y)
+  print('Salvar')
+  x, y = locateAllOnScreen('./imgs/Salvar.png')
+  click(1553, 155)
+  press('clique')
   wait(3)
-
+  press('enter')
 
 
 
