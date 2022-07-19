@@ -1,8 +1,10 @@
 # Functions utils
-# By VictorKlitzke(Sem copia safado)
+# By VictorKlitzke(Sem copiar safado)
 
 from csv import writer
 from pyautogui import *
+from selenium import *
+from behave import *
 from time import sleep as wait
 
 def Novo():
@@ -37,12 +39,40 @@ def Novo():
   press('enter')
   wait(.7)
   press('enter')
-  write('1122')
+  typewrite("9813")
   wait(.7)
   press('enter')
   wait(.7)
-  
- 
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(3)
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(.7)
+  press('enter')
+  wait(.7)
+  print('editar')
+  x, y = locateAllOnScreen('./imgs/editar.png')
+  position()
+  click(x, y)
+  wait(3)
+
+
+
+
+
+
+
 
 
 
